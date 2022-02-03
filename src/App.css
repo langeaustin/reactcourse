@@ -13,7 +13,6 @@
   }
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -22,7 +21,12 @@
     transform: rotate(360deg);
   }
 }
-
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
+}
 
 Nav {
   display: flex;
@@ -35,6 +39,7 @@ Nav {
 nav > h3, nav > h4 {
   margin: 0;
 }
+
 nav > h3 {
   margin-right: auto;
   color: #61DAFB;
@@ -45,4 +50,29 @@ nav > h3 {
 nav > h4 {
   color: #DEEBF8;
   font-weight: 600;
+}
+
+main {
+  padding: 57px 27px;
+  color: whitesmoke;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 45px;
+  font-size: 39.06px;
+}
+
+.main--facts {
+  margin-top: 37px;
+  max-width: 400px;
+}
+
+.main--facts > li {
+  line-height: 16px;
+  padding-block: 6px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
 }
